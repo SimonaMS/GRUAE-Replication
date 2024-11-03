@@ -222,6 +222,10 @@ def binet_model_fn(dataset,
     loss_functions = {AttributeType.CATEGORICAL: categorical_loss, AttributeType.NUMERICAL:
         lambda y_t, y_p: mse_weight * losses.mean_squared_error(y_t, y_p)}
     loss_map = {}
+    
+    # Have to set the loss for the action and org attributes to categorical_loss to avoid error
+    loss_map = {'action': categorical_loss, 'org': categorical_loss, 'organization': categorical_loss,
+                'resource': categorical_loss}
 
     if not use_attributes:
         features = dataset.features[:1]
