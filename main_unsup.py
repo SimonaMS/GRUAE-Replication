@@ -129,7 +129,7 @@ if __name__ == '__main__':
         #undo for final dict(ad=NaiveAnomalyDetector),  # Control flow, trace-level    ---Algorithms for anomaly detection of traces in logs of process aware information systems
         #undo for final dict(ad=SamplingAnomalyDetector),  # Control flow, trace-level    ---Algorithms for anomaly detection of traces in logs of process aware information systems
         #undo for final dict(ad=DAE, fit_kwargs=dict(epochs=100, batch_size=64)),  ## Multi-perspective, attr-level    ---Analyzing business process anomalies using autoencoders
-        dict(ad=BINetv3, fit_kwargs=dict(epochs=20, batch_size=64)), ## Multi-perspective, attr-level  ---BINet: Multi-perspective business process anomaly classification
+        #undo for final dict(ad=BINetv3, fit_kwargs=dict(epochs=20, batch_size=64)), ## Multi-perspective, attr-level  ---BINet: Multi-perspective business process anomaly classification
         # dict(ad=BINetv2, fit_kwargs=dict(epochs=20, batch_size=64)), ## Multi-perspective, attr-level  ---BINet: Multivariate business process anomaly detection using deep learning
         # dict(ad=GAMA,ad_kwargs=dict(n_epochs=20)), ## Multi-perspective, attr-level    ---GAMA: A Multi-graph-based Anomaly Detection Framework for Business Processes via Graph Neural Networks
         # dict(ad=VAE), ## Multi-perspective, attr-level 自己修改后使其能够检测attr-level      ---Autoencoders for improving quality of process event logs
