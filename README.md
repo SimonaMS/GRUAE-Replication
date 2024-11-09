@@ -24,6 +24,7 @@ Start by cloning this repository to your local machine:
 ```bash
 git clone https://github.com/your_username/your_repo_name.git
 cd your_repo_name
+```
 
 ### 2. Create and Activate the Conda Environment
 
@@ -32,6 +33,7 @@ Ensure that you have Conda installed. Then, create and activate the environment 
 ```bash
 conda env create -f environment.yml
 conda activate gruae
+```
 
 ### 3. Install Additional Python Dependencies
 
@@ -39,6 +41,7 @@ Use pip to install any additional dependencies that might not be covered in the 
 
 ```bash
 pip install -r requirements.txt
+```
 
 
 ### Acknowledgements
